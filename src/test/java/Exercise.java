@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class Exercise {
     @Test
     public void openPage(){
-        System.setProperty("webdriver.chrome.driver","C:\\Repo\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://app.bluealert.pl/ba/form/formularz-testowy");
         driver.manage().window().maximize();
